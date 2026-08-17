@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" fill="none">
+  <defs>
+    <linearGradient id="bgDuta" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf4ff" />
+      <stop offset="50%" stop-color="#fae8ff" />
+      <stop offset="100%" stop-color="#f5d0fe" />
+    </linearGradient>
+    <linearGradient id="purpleGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9333ea" />
+      <stop offset="100%" stop-color="#7e22ce" />
+    </linearGradient>
+    <filter id="glowPurple" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#a855f7" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <!-- 8-Pointed Islamic Star (Rub el Hizb) Base -->
+  <g filter="url(#glowPurple)">
+    <rect x="18" y="18" width="64" height="64" rx="8" fill="url(#bgDuta)" stroke="#9333ea" stroke-width="2.5" />
+    <rect x="18" y="18" width="64" height="64" rx="8" transform="rotate(45 50 50)" fill="url(#bgDuta)" stroke="#9333ea" stroke-width="2.5" />
+  </g>
+  <circle cx="50" cy="50" r="26" fill="#7e22ce" stroke="#fef08a" stroke-width="2"/>
+  <!-- Crown / Star of Excellence -->
+  <polygon points="50,29 53,37 61,37 55,42 57,50 50,45 43,50 45,42 39,37 47,37" fill="#fbbf24"/>
+  <path d="M40 57 Q50 63 60 57" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <circle cx="50" cy="67" r="2.5" fill="#facc15"/>
+</svg>

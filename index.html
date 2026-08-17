@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- SEO & School Metadata -->
+  <title>TABAYYUN DIGITAL — MA SHIROTHUL FUQOHA’ | Cerdas Bermedia, Berakhlak Tanpa Bullying</title>
+  <meta name="description" content="Platform edukasi interaktif resmi MA Shirothul Fuqoha' untuk pelajar SMP dan SMA/MA: Kenali Bullying, Cyberbullying, Landasan QS. Al-Hujurat 11 & QS. Al-Isra 53, Metode Tabayyun 6 Langkah, Simulasi Kasus & Kuis Digital.">
+  <meta name="author" content="MA Shirothul Fuqoha’">
+  <meta name="keywords" content="MA Shirothul Fuqoha, Tabayyun Digital, Anti Bullying, Cyberbullying, Madrasah, Pesantren, Akhlak Digital, QS Al-Hujurat 11, QS Al-Isra 53">
+  
+  <!-- Favicon using school logo -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo-ma-shirothul-fuqoha.svg">
+  
+  <!-- Google Fonts: Plus Jakarta Sans, Outfit & Amiri -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Modular Stylesheets -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+  ========================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <!-- School Official Brand Link -->
+      <a href="#hero" class="brand-wrapper" title="MA Shirothul Fuqoha’ - Tabayyun Digital">
+        <img src="assets/images/logo-ma-shirothul-fuqoha.svg" alt="Logo Resmi MA Shirothul Fuqoha’" class="brand-logo-img js-school-logo">
+        <div class="brand-text-block">
+          <span class="brand-badge">PROGRAM EDUKASI DIGITAL</span>
+          <span class="brand-school-name js-school-name">MA SHIROTHUL FUQOHA’</span>
+          <span class="brand-sub">Madrasah &amp; Pesantren Berakhlak</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Navigasi Utama">
+        <a href="#kenali" class="nav-link">Kenali Bullying</a>
+        <a href="#bercanda" class="nav-link">Bercanda?</a>
+        <a href="#ayat" class="nav-link">Ayat &amp; Akhlak</a>
+        <a href="#tabayyun" class="nav-link">6 Langkah</a>
+        <a href="#simulasi" class="nav-link">Simulasi</a>
+        <a href="#think" class="nav-link">Think!</a>
+        <a href="#kuis" class="nav-link">Kuis</a>
+        <a href="#refleksi" class="nav-link">Refleksi</a>
+        <a href="#bantuan" class="nav-link">Bantuan</a>
+
+        <!-- Live Points Widget -->
+        <div class="header-points-widget" title="Poin Akhlak Digital Anda">
+          <img src="assets/images/badge-pemula.svg" alt="Badge" class="header-points-icon js-rank-icon">
+          <span class="header-points-text js-point-count">0 XP</span>
+        </div>
+      </nav>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Buka Menu Navigasi">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay & Menu -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Menu Ponsel">
+    <div class="drawer-header">
+      <div class="brand-text-block">
+        <span class="brand-school-name js-school-name">MA SHIROTHUL FUQOHA’</span>
+        <span class="brand-sub">Tabayyun Digital</span>
+      </div>
+      <button class="modal-close-btn" id="closeDrawerBtn" aria-label="Tutup Menu">&times;</button>
+    </div>
+    <div class="drawer-body">
+      <div class="header-points-widget" style="margin-bottom: 1rem;">
+        <img src="assets/images/badge-pemula.svg" alt="Badge" class="header-points-icon js-rank-icon">
+        <div>
+          <div class="header-points-text js-point-count">0 XP</div>
+          <small class="js-rank-title" style="color: #64748b; font-size: 0.75rem;">Pemula Tabayyun</small>
+        </div>
+      </div>
+      <a href="#hero" class="drawer-link">🏠 Beranda</a>
+      <a href="#kenali" class="drawer-link">🛡️ Kenali Bullying</a>
+      <a href="#bercanda" class="drawer-link">🎭 Bullying atau Bercanda?</a>
+      <a href="#ayat" class="drawer-link">📖 Ayat &amp; Akhlak Digital</a>
+      <a href="#tabayyun" class="drawer-link">🔍 6 Langkah Tabayyun</a>
+      <a href="#simulasi" class="drawer-link">📱 Simulasi Kasus (8 Studi)</a>
+      <a href="#think" class="drawer-link">✍️ Think Before You Post</a>
+      <a href="#kuis" class="drawer-link">🎯 Kuis Benar atau Salah</a>
+      <a href="#dilema" class="drawer-link">🤝 Apa yang Harus Dilakukan?</a>
+      <a href="#bantuan" class="drawer-link">🆘 Laporkan Bullying (Aman)</a>
+      <a href="#refleksi" class="drawer-link">🌟 Refleksi Diri &amp; Sertifikat</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ==========================================
+         HERO SECTION
+    ========================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-program-badge">
+            <span>✨</span>
+            <span>PROGRAM EDUKASI DIGITAL — MA SHIROTHUL FUQOHA’</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="hero-title-highlight">TABAYYUN DIGITAL</span>
+            <span class="hero-school-label js-school-name">MA SHIROTHUL FUQOHA’</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Cerdas Memeriksa Informasi, Bijak Berkomentar, dan Berakhlak Tanpa Bullying.
+          </p>
+
+          <div class="hero-hook-quote">
+            “Berhenti sejenak sebelum mengetik, berpikir sebelum percaya, dan berakhlak sebelum berbagi.”
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#kenali" class="btn btn--primary btn--lg">
+              <span>🛡️</span> KENALI BULLYING
+            </a>
+            <a href="#simulasi" class="btn btn--gold btn--lg">
+              <span>🚀</span> TANTANGAN TABAYYUN
+            </a>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="hero-stat-item">
+              <span class="stat-num">4 Bentuk</span>
+              <span class="stat-label">Bullying &amp; Cyber</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="stat-num">2 Landasan</span>
+              <span class="stat-label">Al-Qur'an Karim</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="stat-num">8 Langkah</span>
+              <span class="stat-label">Metode T-A-B-A-Y-Y-U-N</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="stat-num">8 Kasus</span>
+              <span class="stat-label">Simulasi Interaktif</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual-card">
+          <img src="assets/images/hero-illustration.svg" alt="Ilustrasi Santri dan Pelajar Madrasah Belajar Tabayyun Digital" class="hero-main-illustration">
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 1: KENALI BULLYING
+    ========================================== -->
+    <section class="section" id="kenali">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Modul Edukasi 01</span>
+          <h2 class="section-title">Kenali Bentuk-Bentuk Bullying</h2>
+          <p class="section-subtitle">
+            Pelajari dan kenali perbedaan kekerasan fisik, celaan lisan, pengucilan sosial, hingga perundungan siber di media sosial.
+          </p>
+        </div>
+
+        <div class="cards-grid-4" id="bullyingCardsGrid">
+          <!-- Rendered dynamically by interactive.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 2: BULLYING ATAU BERCANDA?
+    ========================================== -->
+    <section class="section" id="bercanda" style="background-color: #f1f5f9;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Mini Game Interaktif</span>
+          <h2 class="section-title">Bullying atau Bercanda?</h2>
+          <p class="section-subtitle">
+            Banyak perundungan disamarkan dengan kata "cuma bercanda". Uji kepekaan empatimu dalam 7 skenario nyata kehidupan santri &amp; pelajar.
+          </p>
+        </div>
+
+        <div id="jokingGameContainer">
+          <!-- Rendered dynamically by interactive.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 3: AYAT UNTUK AKHLAK DIGITAL
+    ========================================== -->
+    <section class="section" id="ayat">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Landasan Nilai Islam &amp; Pesantren</span>
+          <h2 class="section-title">Ayat untuk Akhlak Digital</h2>
+          <p class="section-subtitle">
+            Dua pedoman luhur Al-Qur'an dalam menjaga kehormatan sesama dan menjaga etika tutur kata di era teknologi modern.
+          </p>
+        </div>
+
+        <div class="quranic-grid" id="quranicCardsGrid">
+          <!-- Rendered dynamically by interactive.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 4: TABAYYUN DIGITAL (8 LANGKAH T-A-B-A-Y-Y-U-N)
+    ========================================== -->
+    <section class="section" id="tabayyun" style="background-color: #f8fafc;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Kerangka Kerja Tabayyun</span>
+          <h2 class="section-title">Metode 8 Langkah Tabayyun Digital (T-A-B-A-Y-Y-U-N)</h2>
+          <p class="section-subtitle">
+            <strong>Tabayyun Digital = Periksa sebelum percaya dan sebarkan.</strong> Ikuti rumus 8 langkah <strong>T-A-B-A-Y-Y-U-N</strong> berikut sebelum membagikan informasi apapun.
+          </p>
+        </div>
+
+        <div class="tabayyun-stepper-wrapper">
+          <div class="tabayyun-step-nav" id="tabayyunStepNav">
+            <!-- Stepper Buttons -->
+          </div>
+
+          <div id="tabayyunStepContent">
+            <!-- Stepper Content Card -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 5: SIMULASI KASUS TABAYYUN (8 SKENARIO)
+    ========================================== -->
+    <section class="section" id="simulasi">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Laboratorium Simulasi</span>
+          <h2 class="section-title">Simulasi Kasus Tabayyun</h2>
+          <p class="section-subtitle">
+            Latih kemampuan berpikir kritis dan berakhlak mulia menghadapi 8 situasi digital yang sering terjadi di lingkungan madrasah dan media sosial.
+          </p>
+        </div>
+
+        <div id="simulationCaseContainer">
+          <!-- Rendered dynamically by interactive.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 6: THINK BEFORE YOU POST
+    ========================================== -->
+    <section class="section" id="think" style="background-color: #f0fdf4;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Filter Pribadi Pelajar</span>
+          <h2 class="section-title">Think Before You Post</h2>
+          <p class="section-subtitle">
+            Gunakan checklist 7 langkah ini sebelum mengunggah status, foto, video, atau mengirim chat di grup kelas.
+          </p>
+        </div>
+
+        <div class="think-layout">
+          <!-- Checklist Area -->
+          <div class="think-checklist-card">
+            <h3 style="margin-bottom: 1rem; font-size: 1.25rem;">📋 Checklist Unggahan Aman &amp; Berakhlak</h3>
+            <div class="think-checklist-items" id="thinkChecklistItems">
+              <!-- Checkboxes rendered dynamically -->
+            </div>
+
+            <!-- Dynamic Status Result -->
+            <div id="thinkStatusBanner" class="think-status-banner status--danger">
+              <div class="status-icon">🛑</div>
+              <div>
+                <div class="status-title">STOP! PERIKSA KEMBALI</div>
+                <div class="status-desc">Centang semua kriteria di atas untuk memastikan unggahan Anda aman &amp; bermanfaat.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Sandbox Tester -->
+          <div class="think-sandbox-card">
+            <h3 style="margin-bottom: 0.5rem; font-size: 1.25rem;">🧪 Uji Draf Pesan / Caption</h3>
+            <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 1rem;">
+              Ketikkan kalimat yang ingin kamu posting untuk memeriksa apakah terdapat indikasi kata celaan kasar atau nada marah.
+            </p>
+
+            <textarea id="postSandboxInput" class="sandbox-textarea" placeholder="Contoh: Teman-teman, jangan lupa besok membawa kitab fiqih untuk tugas kelompok bersama ya..."></textarea>
+            
+            <button class="btn btn--primary btn--full" id="btnTestPost">
+              Periksa Bahasa Pesan 🔍
+            </button>
+
+            <div id="sandboxResultBox"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 7: KUIS BENAR ATAU SALAH
+    ========================================== -->
+    <section class="section" id="kuis">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Evaluasi Pemahaman</span>
+          <h2 class="section-title">Kuis: Benar atau Salah?</h2>
+          <p class="section-subtitle">
+            Jawab 10 pertanyaan seputar mitos &amp; fakta bullying, privasi digital, serta etika bermedia menurut syariat Islam.
+          </p>
+        </div>
+
+        <div id="trueFalseQuizContainer">
+          <!-- Rendered dynamically by interactive.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 8: APA YANG HARUS SAYA LAKUKAN? (UPSTANDER)
+    ========================================== -->
+    <section class="section" id="dilema" style="background-color: #f8fafc;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Panduan Upstander</span>
+          <h2 class="section-title">Apa yang Harus Saya Lakukan?</h2>
+          <p class="section-subtitle">
+            Menjadi saksi (bystander) perundungan membutuhkan keberanian bijak. Melawan bullying bukan berarti melakukan bullying balik kepada pelaku.
+          </p>
+        </div>
+
+        <div class="dilemmas-grid" id="actionDilemmasContainer">
+          <!-- Rendered dynamically by interactive.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 9: LAPORKAN BULLYING (PANDUAN AMAN)
+    ========================================== -->
+    <section class="section" id="bantuan">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Ruang Aman &amp; Dukungan</span>
+          <h2 class="section-title">Laporkan Bullying</h2>
+          <p class="section-subtitle">
+            “Jika kamu atau temanmu mengalami bullying, jangan menghadapi semuanya sendirian. Melapor bukan berarti mengadu (cepu), melainkan mencari bantuan agar masalah diselesaikan dengan aman.”
+          </p>
+        </div>
+
+        <!-- 4 Saluran Bantuan Utama -->
+        <div class="report-channels-grid">
+          <div class="report-channel-card">
+            <div class="report-channel-icon">👨‍🏫</div>
+            <div class="report-channel-title">Berbicara dengan Guru</div>
+            <div class="report-channel-desc">Konsultasikan kepada Bapak/Ibu guru yang kamu percayai di madrasah.</div>
+          </div>
+          <div class="report-channel-card">
+            <div class="report-channel-icon">🏫</div>
+            <div class="report-channel-title">Berbicara dengan Wali Kelas</div>
+            <div class="report-channel-desc">Wali kelas adalah pembina langsung kelas yang siap mendampingi solusinya.</div>
+          </div>
+          <div class="report-channel-card">
+            <div class="report-channel-icon">🏡</div>
+            <div class="report-channel-title">Berbicara dengan Orang Tua</div>
+            <div class="report-channel-desc">Orang tua adalah tempat perlindungan pertama yang selalu mengasihimu.</div>
+          </div>
+          <div class="report-channel-card">
+            <div class="report-channel-icon">🤝</div>
+            <div class="report-channel-title">Orang Dewasa Terpercaya</div>
+            <div class="report-channel-desc">Ustadz pembina asrama, guru BK, atau konselor sekolah yang amanah.</div>
+          </div>
+        </div>
+
+        <!-- Private Incident Report Assistant Note -->
+        <div class="report-helper-box">
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--color-primary-950);">
+            📝 Asisten Penyusun Catatan Konsultasi Privat
+          </h3>
+          <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 1.5rem;">
+            Fitur ini membantu menyusun draf catatan kronologi secara terstruktur di perangkatmu sendiri tanpa menyimpan data ke server luar (100% privasi terlindungi).
+          </p>
+
+          <div class="report-form-group">
+            <label class="report-form-label" for="reportTargetRole">Tujuan Konsultasi:</label>
+            <select id="reportTargetRole" class="report-form-control">
+              <option value="Guru BK MA Shirothul Fuqoha’">Guru BK MA Shirothul Fuqoha’</option>
+              <option value="Wali Kelas MA Shirothul Fuqoha’">Wali Kelas MA Shirothul Fuqoha’</option>
+              <option value="Ustadz / Ustadzah Pengasuhan Asrama">Ustadz / Ustadzah Pengasuhan Asrama</option>
+              <option value="Orang Tua / Wali">Orang Tua / Wali</option>
+            </select>
+          </div>
+
+          <div class="report-form-group">
+            <label class="report-form-label" for="reportCategory">Kategori Masalah:</label>
+            <select id="reportCategory" class="report-form-control">
+              <option value="Perundungan Siber (Cyberbullying) di Grup/Medsos">Perundungan Siber (Cyberbullying) di Grup/Medsos</option>
+              <option value="Pelecehan Lisan / Ejekan Julukan Buruk">Pelecehan Lisan / Ejekan Julukan Buruk</option>
+              <option value="Penyebaran Foto/Chat Tanpa Izin">Penyebaran Foto/Chat Tanpa Izin</option>
+              <option value="Pengucilan / Bullying Sosial">Pengucilan / Bullying Sosial</option>
+              <option value="Kekerasan / Ancaman Fisik">Kekerasan / Ancaman Fisik</option>
+            </select>
+          </div>
+
+          <div class="report-form-group">
+            <label class="report-form-label" for="reportChronology">Ringkasan Kronologi Singkat:</label>
+            <textarea id="reportChronology" class="report-form-control" rows="3" placeholder="Tuliskan secara ringkas apa yang terjadi, kapan, dan di mana..."></textarea>
+          </div>
+
+          <button class="btn btn--primary btn--full" id="btnGenerateReportDraft">
+            Buat Draf Pesan Konsultasi 📋
+          </button>
+
+          <div id="reportDraftResult" style="display: none; margin-top: 1.5rem;">
+            <label class="report-form-label">Draf Siap Disalin / Dicetak:</label>
+            <textarea id="reportDraftText" class="report-form-control" rows="8" readonly></textarea>
+            <small style="display: block; margin-top: 0.5rem; color: #047857; font-weight: 600;">
+              ✔ Silakan salin teks ini untuk dikirimkan via chat pribadi kepada guru/ustadz, atau bawa saat menemui ruang BK.
+            </small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 10: REFLEKSI DIRI & IKRAR DIGITAL
+    ========================================== -->
+    <section class="section" id="refleksi" style="background-color: #f1f5f9;">
+      <div class="container reflection-wrapper">
+        <div class="section-header">
+          <span class="section-tag">Audit Hati &amp; Akhlak</span>
+          <h2 class="section-title">Refleksi Diri Pelajar</h2>
+          <p class="section-subtitle">
+            Jawablah 7 pertanyaan ini dengan jujur dalam hati untuk mengenali jejak komunikasi digitalmu.
+          </p>
+        </div>
+
+        <div class="reflection-list" id="selfReflectionList">
+          <!-- Rendered dynamically by interactive.js -->
+        </div>
+
+        <!-- Reflection Affirmation & Certificate Trigger Box -->
+        <div id="reflectionResultBox" class="reflection-result-card" style="display: none;">
+          <h3 style="color: #065f46; font-size: 1.4rem; margin-bottom: 0.5rem;">
+            🌱 “Setiap orang bisa belajar menjadi lebih baik.”
+          </h3>
+          <p style="color: #047857; font-size: 1rem; max-width: 620px; margin: 0 auto 1.5rem auto;">
+            Mulailah dari cara kita berbicara, mengetik, dan memperlakukan orang lain. Perubahan besar dimulai dari satu jari yang menahan diri dari menyakiti sesama.
+          </p>
+
+          <div class="reflection-pledge-box">
+            <h4 style="font-size: 1.15rem; color: #064e3b; margin-bottom: 0.5rem;">
+              📜 Ikrar Pelajar Berakhlak Digital MA Shirothul Fuqoha’
+            </h4>
+            <p style="font-size: 0.88rem; color: #475569;">
+              Masukkan nama lengkapmu untuk mengukuhkan ikrar dan mencetak Sertifikat Apresiasi Resmi:
+            </p>
+
+            <div class="pledge-input-group">
+              <input type="text" id="studentPledgeName" class="pledge-name-input" placeholder="Masukkan Nama Lengkap Anda...">
+              <button class="btn btn--primary" id="btnGenerateCertificate">
+                Terbitkan Sertifikat 🏆
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate Display Target Area -->
+        <div id="certificateDisplayArea" style="display: none; margin-top: 2rem;">
+          <!-- Generated by certificate.js -->
+        </div>
+
+        <div id="certificateControls" style="display: none; text-align: center; margin-top: 1rem;">
+          <button class="btn btn--gold" id="btnPrintCertificate">
+            🖨️ Cetak / Simpan PDF Sertifikat
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 11: GAMIFIKASI & TINGKATAN PRESTASI
+    ========================================== -->
+    <section class="section" id="prestasi">
+      <div class="container">
+        <div class="gamification-hub">
+          <div class="text-center" style="max-width: 700px; margin: 0 auto;">
+            <span class="badge-pill badge-pill--gold" style="margin-bottom: 0.5rem;">🏆 Sistem Poin &amp; Gamifikasi Santri</span>
+            <h2 style="color: #ffffff; font-size: 2rem; margin-bottom: 0.5rem;">Peringkat Akhlak Digital</h2>
+            <p style="color: #cbd5e1; font-size: 0.95rem;">
+              Dapatkan Poin Akhlak (XP) dengan menyelesaikan materi, kuis benar/salah, simulasi kasus, serta refleksi diri.
+            </p>
+
+            <!-- Live Progress Bar -->
+            <div style="background: rgba(255,255,255,0.15); height: 12px; border-radius: 99px; margin: 1.5rem 0 0.5rem 0; overflow: hidden;">
+              <div class="js-rank-progress-bar" style="background: linear-gradient(90deg, #34d399, #fbbf24); height: 100%; width: 5%; transition: width 0.4s ease;"></div>
+            </div>
+            <div class="js-rank-progress-text" style="font-size: 0.85rem; color: #a7f3d0; font-weight: 700;">
+              Mulai jelajahi materi untuk meningkatkan lencana!
+            </div>
+          </div>
+
+          <div class="ranks-grid">
+            <div class="rank-card">
+              <img src="assets/images/badge-pemula.svg" alt="Pemula Tabayyun" class="rank-card-icon">
+              <div class="rank-card-title">Pemula Tabayyun</div>
+              <div class="rank-card-pts">0 - 100 XP</div>
+              <div class="rank-card-desc">Langkah awal mengenali etika berbicara &amp; menyaring informasi.</div>
+            </div>
+            <div class="rank-card">
+              <img src="assets/images/badge-bijak.svg" alt="Pelajar Bijak Digital" class="rank-card-icon">
+              <div class="rank-card-title">Pelajar Bijak Digital</div>
+              <div class="rank-card-pts">101 - 250 XP</div>
+              <div class="rank-card-desc">Mampu membedakan fakta, opini, &amp; menjauhi perundungan online.</div>
+            </div>
+            <div class="rank-card">
+              <img src="assets/images/badge-sahabat.svg" alt="Sahabat Anti-Bullying" class="rank-card-icon">
+              <div class="rank-card-title">Sahabat Anti-Bullying</div>
+              <div class="rank-card-pts">251 - 400 XP</div>
+              <div class="rank-card-desc">Aktif menjaga teman, berani membela, &amp; menciptakan ruang aman.</div>
+            </div>
+            <div class="rank-card">
+              <img src="assets/images/badge-duta.svg" alt="Duta Akhlak Digital" class="rank-card-icon">
+              <div class="rank-card-title">Duta Akhlak Digital</div>
+              <div class="rank-card-pts">401+ XP</div>
+              <div class="rank-card-desc">Teladan santri MA Shirothul Fuqoha’ yang cerdas bermedia &amp; berakhlakul karimah.</div>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: 1.5rem;">
+            <button class="btn btn--secondary btn--sm" onclick="GamificationManager.resetProgress()">
+              🔄 Reset Progres Belajar
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 12: SLOGAN RESMI
+    ========================================== -->
+    <div class="slogan-banner">
+      <div class="container">
+        <div class="slogan-heading">
+          STOP BULLYING &bull; THINK BEFORE POSTING &bull; TABAYYUN BEFORE SHARING &bull; AKHLAK BEFORE COMMENTING
+        </div>
+        <div class="slogan-sub">
+          “Jangan merendahkan orang lain” (QS. Al-Hujurat: 11) &bull; “Berkatalah dengan perkataan yang terbaik” (QS. Al-Isra: 53)
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ==========================================
+       SECTION 13: SITE FOOTER
+  ========================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="assets/images/logo-ma-shirothul-fuqoha.svg" alt="Logo MA Shirothul Fuqoha’" style="height: 48px; width: auto;" class="js-school-logo">
+          </div>
+          <div class="footer-brand-title js-school-name">MA SHIROTHUL FUQOHA’</div>
+          <p class="footer-motto-text js-footer-tagline">
+            “Belajar Tabayyun, Menjaga Lisan, Menguatkan Persahabatan.”
+          </p>
+          <p style="font-size: 0.82rem; color: #64748b; line-height: 1.5;">
+            Madrasah Aliyah berbasis pesantren yang membimbing pelajar menjadi cerdas, santun, bertanggung jawab, dan berakhlak mulia di dunia nyata maupun ruang digital.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigasi Edukasi</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#kenali" class="footer-nav-link">Kenali Bentuk Bullying</a></li>
+            <li><a href="#bercanda" class="footer-nav-link">Bullying atau Bercanda?</a></li>
+            <li><a href="#ayat" class="footer-nav-link">Landasan QS. Al-Hujurat &amp; Al-Isra</a></li>
+            <li><a href="#tabayyun" class="footer-nav-link">Metode 6 Langkah Tabayyun</a></li>
+            <li><a href="#simulasi" class="footer-nav-link">Simulasi Kasus Digital</a></li>
+            <li><a href="#kuis" class="footer-nav-link">Kuis Benar atau Salah</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Layanan &amp; Bimbingan</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#bantuan" class="footer-nav-link">Konseling Guru BK Madrasah</a></li>
+            <li><a href="#bantuan" class="footer-nav-link">Wali Kelas &amp; Asatidz Pendamping</a></li>
+            <li><a href="#bantuan" class="footer-nav-link">Biro Pengasuhan Santri Pesantren</a></li>
+            <li><a href="#refleksi" class="footer-nav-link">Ikrar &amp; Sertifikat Digital</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 <strong>TABAYYUN DIGITAL — MA SHIROTHUL FUQOHA’</strong>. Hak Cipta Dilindungi.
+        </div>
+        <div>
+          Dirancang untuk Pelajar SMP &amp; SMA/MA &bull; Berbasis Nilai Keislaman &amp; Pesantren
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       MODALS
+  ========================================== -->
+  <!-- Bullying Detail Modal -->
+  <div class="modal-backdrop" id="bullyingDetailModal" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title js-modal-cat-title">Detail Bullying</h3>
+        <button class="modal-close-btn js-modal-close" aria-label="Tutup">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="js-modal-cat-desc" style="font-size: 0.95rem; color: #475569; margin-bottom: 1rem;"></p>
+        
+        <h4 style="font-size: 0.9rem; font-weight: 800; color: #0f172a; margin-bottom: 0.5rem;">Contoh Perilaku:</h4>
+        <ul class="js-modal-cat-examples" style="padding-left: 1.2rem; font-size: 0.88rem; color: #475569; margin-bottom: 1rem; line-height: 1.5;"></ul>
+
+        <h4 style="font-size: 0.9rem; font-weight: 800; color: #991b1b; margin-bottom: 0.5rem;">Dampak Bagi Korban:</h4>
+        <p class="js-modal-cat-impact" style="font-size: 0.88rem; color: #475569; margin-bottom: 1rem;"></p>
+
+        <div style="background: #ecfdf5; border-left: 4px solid #047857; padding: 0.75rem; border-radius: 4px;">
+          <div style="font-size: 0.8rem; font-weight: 800; color: #047857; margin-bottom: 0.25rem;">📖 Landasan Moral Islam:</div>
+          <p class="js-modal-cat-islamic" style="font-size: 0.85rem; color: #064e3b;"></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn--secondary btn--sm js-modal-close">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rank Up Modal -->
+  <div class="modal-backdrop" id="rankUpModal" role="dialog" aria-modal="true">
+    <div class="modal-content text-center">
+      <div class="modal-body" style="padding: 2.5rem 1.5rem;">
+        <img src="assets/images/badge-bijak.svg" alt="Rank Badge" class="js-modal-rank-icon" style="width: 84px; height: 84px; margin: 0 auto 1rem auto;">
+        <span class="badge-pill badge-pill--gold" style="margin-bottom: 0.5rem;">Lencana Baru Terbuka! 🎉</span>
+        <h3 class="modal-title js-modal-rank-title" style="font-size: 1.6rem; margin-bottom: 0.5rem; color: #064e3b;">Pelajar Bijak Digital</h3>
+        <p class="js-modal-rank-desc" style="font-size: 0.92rem; color: #475569; margin-bottom: 1.5rem;">
+          Selamat atas capaian poin akhlakmu. Terus tebarkan kebaikan di dunia digital!
+        </p>
+        <button class="btn btn--primary js-modal-close">Lanjutkan Belajar 🚀</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Kembali ke Atas">
+    ▲
+  </button>
+
+  <!-- Modular Scripts -->
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/gamification.js"></script>
+  <script src="assets/js/interactive.js"></script>
+  <script src="assets/js/certificate.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

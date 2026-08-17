@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" fill="none">
+  <defs>
+    <linearGradient id="bgSahabat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb" />
+      <stop offset="100%" stop-color="#fde68a" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <filter id="glowGold" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#d97706" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <!-- Shield/Trophy Base -->
+  <path d="M50 8 L84 20 V48 C84 68 50 90 50 90 C50 90 16 68 16 48 V20 L50 8 Z" fill="url(#bgSahabat)" stroke="#d97706" stroke-width="3" filter="url(#glowGold)"/>
+  <path d="M50 16 L76 25 V46 C76 62 50 80 50 80 C50 80 24 62 24 46 V25 L50 16 Z" fill="none" stroke="#b45309" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <!-- Trophy Emblem -->
+  <path d="M36 34 H64 V46 C64 54 57 60 50 60 C43 60 36 54 36 46 V34 Z" fill="url(#gold)"/>
+  <path d="M36 38 H28 C26 38 24 40 24 42 V46 C24 50 28 53 36 53" stroke="#b45309" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M64 38 H72 C74 38 76 40 76 42 V46 C76 50 72 53 64 53" stroke="#b45309" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <rect x="46" y="60" width="8" height="8" fill="#b45309"/>
+  <rect x="40" y="68" width="20" height="5" rx="2" fill="#d97706"/>
+</svg>

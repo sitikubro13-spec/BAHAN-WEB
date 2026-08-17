@@ -1,0 +1,233 @@
+/**
+ * TABAYYUN DIGITAL — MA SHIROTHUL FUQOHA’
+ * Responsive Media Queries (320px, 375px, 430px, 768px, 1024px, 1440px)
+ */
+
+/* ==========================================
+   TABLET & SMALL DESKTOP (<= 1024px)
+========================================== */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: var(--space-8);
+  }
+
+  .hero-program-badge, .hero-hook-quote {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .hero-stats-row {
+    justify-content: center;
+  }
+
+  .hero-visual-card {
+    order: -1;
+  }
+
+  .hero-main-illustration {
+    max-width: 420px;
+  }
+
+  .think-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .quranic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ==========================================
+   MOBILE & TABLET PORTRAIT (<= 768px)
+========================================== */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: block;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .hero-school-label {
+    font-size: 1.25rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .section {
+    padding: var(--space-10) 0;
+  }
+
+  .tabayyun-step-nav {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cards-grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .interactive-game-card, .tabayyun-detail-card, .quiz-interactive-card, .report-helper-box {
+    padding: var(--space-5);
+  }
+
+  .tabayyun-detail__header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cert-footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    gap: var(--space-3);
+    text-align: center;
+  }
+
+  .pledge-input-group {
+    flex-direction: column;
+  }
+}
+
+/* ==========================================
+   SMARTPHONE PHABLET (<= 430px)
+========================================== */
+@media (max-width: 430px) {
+  .header-container {
+    height: 68px;
+  }
+
+  .brand-logo-img {
+    height: 40px;
+  }
+
+  .brand-school-name {
+    font-size: 0.92rem;
+  }
+
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .hero-stats-row {
+    flex-direction: column;
+    gap: var(--space-3);
+    align-items: center;
+  }
+
+  .tabayyun-step-nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quiz-action-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .reflection-item-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .reflection-choice-radios {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: var(--space-2);
+    border-top: 1px dashed var(--color-slate-200);
+  }
+
+  .card-quranic__arabic {
+    font-size: 1.35rem;
+    line-height: 2;
+  }
+
+  .official-certificate-card {
+    padding: var(--space-4);
+  }
+
+  .cert-student-name {
+    font-size: 1.6rem;
+    padding: var(--space-1) var(--space-3);
+  }
+
+  .cert-main-heading {
+    font-size: 1.5rem;
+  }
+}
+
+/* ==========================================
+   VERY SMALL SCREENS (<= 375px & 320px)
+========================================== */
+@media (max-width: 375px) {
+  .hero-title {
+    font-size: 1.65rem;
+  }
+
+  .section-title {
+    font-size: 1.45rem;
+  }
+
+  .header-points-widget {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .header-points-text {
+    font-size: 0.75rem;
+  }
+
+  .btn {
+    padding: 0.65rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .sim-phone-header {
+    padding: var(--space-3);
+  }
+
+  .sim-bubble {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+  }
+
+  .brand-sub {
+    display: none;
+  }
+}
